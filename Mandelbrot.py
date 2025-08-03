@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Class for visualising the mandelbrot set
 class Mandelbrot:
     def __init__(self, xLower, xUpper, yLower, yUpper, maxIter=500, sampleSize=1000, complexSeed=0):
         self.xLower = xLower
