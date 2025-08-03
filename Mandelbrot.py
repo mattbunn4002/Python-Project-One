@@ -20,6 +20,7 @@ class Mandelbrot:
             z = (z * z) + c
         return self.maxIter
 
+    # Prints out whether complex number is in the mandelbrot set
     def isInMandelbrot(self, c):
         iterations = Mandelbrot.iterateMandelbrot(self, c)
         if (iterations < 500):
@@ -28,6 +29,7 @@ class Mandelbrot:
             print(str(c) + " is in the mandelbrot set.")
         
 
+    # Construct the mandelbrot set
     def mandelbrotSet(self):
         xInputs = np.linspace(self.xLower, self.xUpper, self.sampleSize)
         yInputs = np.linspace(self.yLower, self.yUpper, self.sampleSize)
